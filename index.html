@@ -1,0 +1,107 @@
+<!-- 640510686 สิริกร ชัยพัฒนาวรรณ -->
+<!-- 640510671 พลอยจันท์ ช่างเรือ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- เพิ่ม cache-control เพื่อบอกว่าเว็บไซต์นี้สามารถ cache เก็บไว้ได้เป็นเวลา 1 ชั่วโมง -->
+    <meta http-equiv="Cache-control" content="public, max-age=3600">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>GraphQL</title>
+    <script src="hausra.js"></script>
+</head>
+
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navb">
+                <div class="webname" id="wn">GraphQL Tutorial App</div>
+                <button id="out">Log Out</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="left">
+            <div class="c1">
+                <div id="t1">Personal todos</div>
+                <form class="inp">
+                    <input id="task" placeholder="What needs to be done?" />
+                </form>
+                <div class="c2">
+                    <div class="ilist">
+                        <div id="item">0 items</div>
+                        <button id="all" class="bt">All</button>
+                        <button id="active" class="bt">Active</button>
+                        <button id="completed" class="bt">Completed</button>
+                        <button id="clear">Clear completed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mid">
+            <div class="c1">
+                <div id="t1">Public feed (realtime)</div>
+                <form class="inp" id="f1">
+                    <input id="task" class="inp1" name="messageInp" placeholder="What needs to be done?" />
+                    <input id="task" name="userN" value="@mysthetic" hidden />
+                </form>
+                <div id="box">
+                    <!-- <div class="c4">
+                        <div id="username">@mysthetic</div>
+                        <div id="message">Listening to music</div>
+                    </div> -->
+                </div>
+
+                <button id="load" onclick="load()">Load older tasks</button>
+            </div>
+        </div>
+        <div id="right">
+            <div class="topic">
+                <div id="t2">ONLINE USERS - 9</div>
+                <div class="usn">
+                    <i class="fa fa-user-o" aria-hidden="true" id="user-icon"></i>
+                    <div id="online">rkive</div>
+                </div>
+                <div class="usn">
+                    <i class="fa fa-user-o" aria-hidden="true" id="user-icon"></i>
+                    <div id="online">jin</div>
+                </div>
+                <div class="usn">
+                    <i class="fa fa-user-o" aria-hidden="true" id="user-icon"></i>
+                    <div id="online">agustd</div>
+                </div>
+                <div class="usn">
+                    <i class="fa fa-user-o" aria-hidden="true" id="user-icon"></i>
+                    <div id="online">uarmyhope</div>
+                </div>
+                <div class="usn">
+                    <i class="fa fa-user-o" aria-hidden="true" id="user-icon"></i>
+                    <div id="online">j.m</div>
+                </div>
+                <div class="usn">
+                    <i class="fa fa-user-o" aria-hidden="true" id="user-icon"></i>
+                    <div id="online">thv</div>
+                </div>
+                <div class="usn">
+                    <i class="fa fa-user-o" aria-hidden="true" id="user-icon"></i>
+                    <div id="online">jungkook.97</div>
+                </div>
+                <div class="usn">
+                    <i class="fa fa-user-o" aria-hidden="true" id="user-icon"></i>
+                    <div id="online">mysthetic</div>
+                </div>
+                <div class="usn">
+                    <i class="fa fa-user-o" aria-hidden="true" id="user-icon"></i>
+                    <div id="online">polly_ploy48</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
